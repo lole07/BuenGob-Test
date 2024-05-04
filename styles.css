@@ -1,0 +1,224 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f5f5;
+    color: #073540;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Heavitas', sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav .menu {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav .menu li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+nav a:hover {
+    background-color: #007d0f;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+article {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    font-family: 'Heavitas', sans-serif;
+}
+
+article p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Estilo para la fecha de publicación */
+article .date {
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo-img {
+    margin-left: 20px;
+}
+
+/* Estilo para la frase de bienvenida */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Heavitas', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la frase de bienvenida más grande y centrada */
+p#welcome-message {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Estilo de imagen de banner */
+.banner-img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para el enlace "Más información" */
+.more-info {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para el botón "Más información" */
+.more-info img {
+    width: 250px;
+    height: auto;
+}
+
+/* Estilos para el contenedor de las imágenes */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para cada imagen */
+.links a {
+    margin: 5px;
+    flex: 1 0 150px;
+}
+
+.links img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query para ajustar el diseño en pantallas más estrechas */
+@media only screen and (max-width: 600px) {
+    .links a {
+        flex-basis: 100%;
+    }
+
+    nav .menu {
+        flex-wrap: wrap;
+    }
+
+    nav .menu li {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+/* Estilos para el contenido */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+.separator-banner-link {
+    display: block;
+    width: 100%;
+}
